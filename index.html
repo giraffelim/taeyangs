@@ -16,6 +16,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 30%;
+      height: 30%;
+  }
+  </style>
 </head>
 
 <body class="is-preload">
@@ -40,7 +54,7 @@
                     <li><a href="#top" id="top-link"><span class="icon fa-home">Intro</span></a></li>
                     <li><a href="#portfolio" id="portfolio-link"><span class="icon fa-th">Project</span></a></li>
                     <li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>
-                    <li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Send Mail</span></a></li>
+                    <li><a href="#contact" id="contact-link"><span class="icon fa-vcard ">Contact us</span></a></li>
                 </ul>
             </nav>
 
@@ -275,16 +289,35 @@
                 <header>
                     <h2>About Me</h2>
                 </header>
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
 
-                <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/avatar.jpg" alt="Los Angeles" width="150" height="150">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>활동</h2><br>
 
-                <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-                    ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-                    laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-                    parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-                    dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-                    ornare iaculis.</p>
+                            2016.03 동양미래대학교 입학 및 MARS 전공동아리 가입<br><br>
+                            2017.12 교내 튜터링 프로그램 튜티 이수<br><br>
+                            2018.07 IOT 창의공학 경진대회 우수상<br><br>
+                            2017.08 캠퍼스 CEO IT 융합실무 은상<br><br>
+                            2018.11 졸업작품 코엑스 전시 및 교내 졸업작품 우수상<br><br>
 
+                        </div>
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -296,12 +329,17 @@
                     <h2>Contact</h2>
                 </header>
 
-                <p>Elementum sem parturient nulla quam placerat viverra
-                    mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-                    donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-                    orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-                <form method="post" action="#">
+                <p align="left">연락처 및 주소</p>
+                <div class="row" align="left">
+                    <div class="col-6 col-12-mobile">
+                        <ul>
+                            <li>경기도 부천시 소사구 괴안동</li>
+                            <li> 연락처 : 010-9192-6062</li>
+                            <li>taeyang7704@naver.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <form method="post" action="#">
                     <div class="row">
                         <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
                         <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
@@ -312,9 +350,12 @@
                             <input type="submit" value="Send Message" />
                         </div>
                     </div>
-                </form>
+                </form> -->
+            </div>
+            <div id="map" class="to-animate" style="height:400px;width:100%;">
 
             </div>
+
         </section>
 
     </div>
@@ -341,6 +382,29 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
+
+    <script>
+        var map;
+
+        function initMap() {
+            var myLatLng = {
+                lat: 37.483672,
+                lng: 126.816223
+            }; //완정역
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                zoom: 16
+            });
+
+
+            var marker = new google.maps.Marker({
+                map: map,
+                position: myLatLng,
+                title: '역곡역'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANFukBJ9cj-CPVGpnPeFwb1bYhaTnaIG0&callback=initMap" async defer></script>
 </body>
 
 </html>
