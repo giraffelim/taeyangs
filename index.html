@@ -16,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
 
 
@@ -24,6 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <style>
+        #myImg:hover {opacity: 0.7;}
         /* Make the image fully responsive */
   .carousel-inner img {
       width: 30%;
@@ -54,6 +56,7 @@
                     <li><a href="#top" id="top-link"><span class="icon fa-home">Intro</span></a></li>
                     <li><a href="#portfolio" id="portfolio-link"><span class="icon fa-th">Project</span></a></li>
                     <li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>
+                    <li><a href="#skill" id="about-link"><span class="icon fas fa-book">Skill</span></a></li>
                     <li><a href="#contact" id="contact-link"><span class="icon fa-vcard ">Contact us</span></a></li>
                 </ul>
             </nav>
@@ -117,7 +120,7 @@
                             <!-- Button to Open the Modal -->
 
                             <a href="#" class="image fit" data-toggle="modal" data-target="#myModal">
-                                <img src="images/SmartHome.jpeg" alt="" />
+                                <img id="myImg"src="images/SmartHome.jpeg" height="350" alt="" />
                                 <header>
                                     <h3>IOT를 이용한 스마트홈</h3>
                                 </header>
@@ -180,7 +183,7 @@
 
 
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+                            <a href="#" class="image fit"><img id="myImg" height="350" src="images/pic03.jpg" alt="" /></a>
                             <header>
                                 <h3>JSP를 이용한 영화 플랫폼 구현</h3>
                             </header>
@@ -188,7 +191,7 @@
                     </div>
                     <div class="col-4 col-12-mobile">
                         <article class="item">
-                            <a href="#" class="image fit" data-toggle="modal" data-target="#myModal2"><img src="images/coex.jpg" alt="" />
+                            <a href="#" class="image fit" data-toggle="modal" data-target="#myModal2"><img id="myImg" src="images/coex.jpg" alt="" />
                                 <header>
                                     <h3>VR 기반 지능형 가상면접 시스템</h3>
                                 </header>
@@ -257,25 +260,198 @@
 
 
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-                            <header>
-                                <h3>Arduino를 이용한 자동 개폐 쓰레기통</h3>
-                            </header>
+                            <a href="#" class="image fit" data-toggle="modal" data-target="#myModal3"><img id="myImg" height="350" src="images/walles.png" alt="" />
+                                <header>
+                                    <h3>Arduino를 이용한 자동개폐 쓰레기통</h3>
+                                </header>
+                            </a>
                         </article>
+
+                        <div id="myModal3" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+
+
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Arduino를 이용한 자동개폐 쓰레기통</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body" style="color:black;">
+                                        <div class="container-Main" align="left">
+
+                                            <h3><strong>Arduino를 이용한 자동개폐 쓰레기통</strong></h3><br>
+                                            <p>
+                                                대학교 1학년때 일상생활 속 작은 불편함을 해결해보고자,
+                                                일상생활속에서 쉽게 접할 수 있는 불편함 중에서, 쓰레기를 버릴 때 양 손 가득 쓰레기를 들고 있거나, 쓰레기통에 묻은 오물, 쓰레기통에서 나는 악취등에서 쉽게 쓰레기를 버릴 수 있고, 편하게 쓰레기를 버릴 수 있는 방법이 없을까?라고 생각하였고
+                                                그 결과 쓰레기통 문을 자동으로 개폐할 수 있도록 도와주는 작품을 만들어보고자 생각하여
+                                                자동 개폐 쓰레기통을 개발하였습니다.
+
+
+                                            </p>
+                                            <p>
+                                                <strong>개발인원/기간</strong>&nbsp;:&nbsp;2명/7일
+                                            </p>
+                                            <p>
+                                                <strong>나의역할</strong><br>
+                                                기획: 아이디어 구성 및 개발기획 주도<br>
+                                                기어모터를 제어하기 위하여 L293D를 사용 <br>
+                                                앞에 대상이 있는걸 확인하기 위해 초음파 센서를 사용, 센서값이 읽힐 경우 모터를 돌려 개폐<br>
+                                                상태를 확인하기 위해 LCD를 이용하여 상태를 확인<br>
+                                                부저를 이용하여 열리거나 닫힐경우 소리를 냄
+                                                <br>
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <div class="container-video">
+                                            <h3><strong>시연 영상</strong></h3>
+                                            <iframe width="750" height="613" src="https://www.youtube.com/embed/bIDw_AYApP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <hr>
+                                        <div class="container-plan">
+                                            <h3><strong>회로도</strong></h3>
+                                            <img src="images/source.png" style="width:100%">
+                                        </div>
+                                        <hr>
+                                        <div class="container-result" align="left">
+                                            <h3><strong>성과</strong></h3>
+                                            성적 : A+ <br>
+                                            <br>
+                                        </div>
+                                        <div class="container-result" align="left">
+                                            <h3><strong>느낀점</strong></h3>
+                                            이번 아두이노 프로젝트를 통해 모터,LCD,부저,초음파 센서 등 부품들의 작동원리와 사용법 등을 알 수 있는 시간이었고, 생각으로만 했던것들을 실제적으로 만들 수 있어서 값진 시간이였습니다.
+
+                                            또한 이번 프로젝트를 통해 어떠한 물건을 만든다는것이 많은 노력을 필요로 한다는걸 느낄 수 있는 시간이 되었습니다.
+
+                                            마지막으로 혼자가 아닌 다른 누군가와 무언가를 하는것에 있어 서로에 대한 이해 , 배려 등 팀원과 의견을 조율하고 서로의 의견을 배려 하는 법 등 혼자 하는것에만 익숙했던 저희에게 혼자가 아닌 팀으로 하는 방법을 배울 수 있었던 정말 값진 시간이였습니다<br>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
                     <div class="col-4 col-12-mobile">
+
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-                            <header>
-                                <h3>Dolor Penatibus</h3>
-                            </header>
+                            <a href="#" class="image fit" data-toggle="modal" data-target="#myModal4"><img id="myImg" height="350" src="images/iphone.png" alt="" />
+                                <header>
+                                    <h3>Swift를 이용한 간단한 메모장</h3>
+                                </header>
+                            </a>
                         </article>
+                        <div id="myModal4" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+
+
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Swift를 이용한 간단한 메모장</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body" style="color:black;">
+                                        <div class="container-Main" align="left">
+
+                                            <h3><strong>Swift를 이용한 간단한 메모장</strong></h3><br>
+                                            <p>
+                                                <strong>개발인원/기간</strong>&nbsp;:&nbsp;1명/4일
+                                            </p>
+                                            <p>
+                                                <strong>개발 내역</strong><br>
+                                                Swift에 관심이 생겨서 간단하게 만들어본 메모장 앱 <br>
+                                                <br>
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <div class="container-video">
+                                            <h3><strong>시연 영상</strong></h3>
+                                            <iframe width="750" height="613" src="https://www.youtube.com/embed/WLibY6nQOwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <hr>
+                                    
+                                        <div class="container-result" align="left">
+                                            <h3><strong>개발 스킬 및 IDE</strong></h3>
+                                            IDE : Xcode
+                                            Skill : Swift
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-                            <header>
-                                <h3>Orci Convallis</h3>
-                            </header>
+                            <a href="#" class="image fit" data-toggle="modal" data-target="#myModal4"><img id="myImg" src="images/apple.png" alt="" height="350" />
+                                <header>
+                                    <h3>Swift를 이용한 간단한 웹뷰</h3>
+                                </header>
+                            </a>
                         </article>
+                          <div id="myModal4" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+
+
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Swift를 이용한 간단한 웹뷰</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body" style="color:black;">
+                                        <div class="container-Main" align="left">
+
+                                            <h3><strong>Swift를 이용한 간단한 메모장</strong></h3><br>
+                                            <p>
+                                                <strong>개발인원/기간</strong>&nbsp;:&nbsp;1명/2일
+                                            </p>
+                                            <p>
+                                                <strong>개발 내역</strong><br>
+                                                Swift에 관심이 생겨서 간단하게 만들어본 웹 뷰<br>
+                                                <br>
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <div class="container-video">
+                                            <h3><strong>시연 영상</strong></h3>
+                                           <iframe width="750" height="613" src="https://www.youtube.com/embed/T37_fhgCrC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <hr>
+                                    
+                                        <div class="container-result" align="left">
+                                            <h3><strong>개발 스킬 및 IDE</strong></h3>
+                                            IDE : Xcode
+                                            Skill : Swift
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
                 </div>
 
@@ -321,8 +497,46 @@
             </div>
         </section>
 
+        <!-- About Me -->
+        <section id="skill" class="four">
+            <div class="container">
+
+                <header>
+                    <h2>개발 기술 및 역량</h2>
+
+                </header>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <i class="fab fa-android"></i>
+                        <h3>Programming</h3>
+                        <p>C, Java, Android</p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <i class="fas fa-database"></i>
+                        <h3>DataBase</h3>
+                        <p>MySQL</p>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <i class="fas fa-archive"></i>
+                        <h3>FrameWork</h3>
+                        <p>BootStrap</p>
+
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <i class="fas fa-at"></i>
+                        <h3>Web</h3>
+                        <p>HTML5, JavaScript, Jsp</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
         <!-- Contact -->
-        <section id="contact" class="four">
+        <section id="contact" class="five">
             <div class="container">
 
                 <header>
@@ -368,43 +582,45 @@
         <!-- Copyright -->
         <ul class="copyright">
             <li>&copy; Untitled. All rights reserved.</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            <li>copyright: TaeYang Lim</li>
         </ul>
 
+
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+
+        <script>
+            var map;
+
+            function initMap() {
+                var myLatLng = {
+                    lat: 37.483672,
+                    lng: 126.816223
+                }; //우리집
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: myLatLng,
+                    zoom: 16
+                });
+
+
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: myLatLng,
+                    title: '역곡역'
+                });
+            }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANFukBJ9cj-CPVGpnPeFwb1bYhaTnaIG0&callback=initMap" async defer></script>
     </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-
-    <script>
-        var map;
-
-        function initMap() {
-            var myLatLng = {
-                lat: 37.483672,
-                lng: 126.816223
-            }; //완정역
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: myLatLng,
-                zoom: 16
-            });
-
-
-            var marker = new google.maps.Marker({
-                map: map,
-                position: myLatLng,
-                title: '역곡역'
-            });
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANFukBJ9cj-CPVGpnPeFwb1bYhaTnaIG0&callback=initMap" async defer></script>
 </body>
 
-</html>
+</5>
