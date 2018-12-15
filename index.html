@@ -16,6 +16,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/effect.css" />
+    <link rel="stylesheet" href="assets/css/effect2.css" />
+    <link rel="stylesheet" href="assets/css/effect3.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
 
@@ -24,6 +27,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="instafeed.min.js"></script>
+
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            userId: 3296250350,
+            sortBy: "most-recent",
+            limit: 20,
+            template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>&nbsp;',
+            // {{link}} : 게시물 링크, {{image}} : 사진 url, {{caption}} : 게시물 텍스트
+            accessToken: '3296250350.7dee764.e70ac7dbd870452a94bdf914ef918ef8'
+        });
+        userFeed.run();
+
+    </script>
+
+
     <style>
         .videowrapper {
 position: relative;
@@ -72,6 +93,7 @@ height: 100%;
                     <li><a href="#portfolio" id="portfolio-link"><span class="icon fa-th">Project</span></a></li>
                     <li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>
                     <li><a href="#skill" id="about-link"><span class="icon fas fa-book">Skill</span></a></li>
+                    <li><a href="#insta" id="about-link"><span class="fab fa-instagram">Insta</span></a></li>
                     <li><a href="#contact" id="contact-link"><span class="icon fa-vcard ">Contact us</span></a></li>
                 </ul>
             </nav>
@@ -131,14 +153,27 @@ height: 100%;
                         <article class="item">
 
 
-
                             <!-- Button to Open the Modal -->
-
+                            <figure class="snip1432">
+                                <img src="images/arduino.jpg" alt="sample36" />
+                                <figcaption>
+                                    <div>
+                                        <h3>IOT를 이용한 스마트홈</h3>
+                                        <h3>교내 IOT 창의공학 경진대회</h3>
+                                    </div>
+                                    <div>
+                                        <h2>Smart Home</h2>
+                                    </div>
+                                </figcaption>
+                                <a href="#" class="image fit" data-toggle="modal" data-target="#myModal"></a>
+                            </figure>
+                            <!--
                             <a href="#" class="image fit" data-toggle="modal" data-target="#myModal">
                                 <img id="myImg" src="images/arduino.jpg" height="350" alt="" /></a>
                             <header>
                                 <h3>IOT를 이용한 스마트홈</h3>
                             </header>
+-->
 
                         </article>
                         <!-- The Modal -->
@@ -201,10 +236,25 @@ height: 100%;
 
 
                         <article class="item">
+                            <figure class="snip1432">
+                                <img src="images/jsp.png" height="350" alt="sample36" />
+                                <figcaption>
+                                    <div>
+                                        <h3>JSP를 이용한 영화 플랫폼</h3>
+                                        <h3>웹프로젝트(전공)</h3>
+                                    </div>
+                                    <div>
+                                        <h2>Movie FlatForm</h2>
+                                    </div>
+                                </figcaption>
+                                <a href="#" class="image fit" data-toggle="modal" data-target="#myModal6"></a>
+                            </figure>
+                            <!--
                             <a href="#" class="image fit" data-toggle="modal" data-target="#myModal6"><img id="myImg" height="350" src="images/jsp.png" alt="" /></a>
                             <header>
                                 <h3>JSP를 이용한 영화 플랫폼 구현</h3>
                             </header>
+-->
 
                         </article>
 
@@ -275,10 +325,25 @@ height: 100%;
 
 
                         <article class="item">
+                            <figure class="snip1432">
+                                <img src="images/mvc2.jpg" height="350" alt="sample36" />
+                                <figcaption>
+                                    <div>
+                                        <h3>JSP&Servlet</h3>
+                                        <h3>개인공부</h3>
+                                    </div>
+                                    <div>
+                                        <h2>MVC2 BOARD</h2>
+                                    </div>
+                                </figcaption>
+                                <a href="#" class="image fit" data-toggle="modal" data-target="#myModal11"></a>
+                            </figure>
+                            <!--
                             <a href="#" class="image fit" data-toggle="modal" data-target="#myModal11"><img id="myImg" height="350" src="images/mvc2.jpg" alt="" /></a>
                             <header>
                                 <h3>MVC2를 이용한 게시판</h3>
                             </header>
+-->
 
                         </article>
 
@@ -310,7 +375,7 @@ height: 100%;
                                         <hr>
                                         <div class="videowrapper">
                                             <h3><strong>시연 영상</strong></h3>
-                                           <iframe width="750" height="613" src="https://www.youtube.com/embed/PT1yDn2cgkY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <iframe width="750" height="613" src="https://www.youtube.com/embed/PT1yDn2cgkY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div>
                                         <hr>
 
@@ -340,11 +405,27 @@ height: 100%;
                     </div>
                     <div class="col-4 col-12-mobile">
                         <article class="item">
+
+                            <figure class="snip1432">
+                                <img src="images/coex.jpg" alt="sample36" />
+                                <figcaption>
+                                    <div>
+                                        <h3>VR 기반 지능형 가상면접 시스템</h3>
+                                        <h3>한국전자전 COEX 출품작</h3>
+                                    </div>
+                                    <div>
+                                        <h2>COEX</h2>
+                                    </div>
+                                </figcaption>
+                                <a href="#" class="image fit" data-toggle="modal" data-target="#myModal2"></a>
+                            </figure>
+                            <!--
                             <a href="#" class="image fit" data-toggle="modal" data-target="#myModal2"><img id="myImg" src="images/coex.jpg" alt="" height="350" /></a>
                             <header>
                                 <h3>VR 기반 지능형 가상면접 시스템</h3>
 
                             </header>
+-->
 
                         </article>
 
@@ -395,6 +476,7 @@ height: 100%;
                                         <hr>
                                         <div class="container-result" align="left">
                                             <h3><strong>성과</strong></h3>
+                                            2018.06 캠퍼스 CEO 경진대회 은상<br>
                                             2018.10 졸업작품 코엑스 전시 및 교내 졸업작품 우수상 <br>
                                             <br>
                                         </div>
@@ -411,10 +493,25 @@ height: 100%;
 
 
                         <article class="item">
+                            <figure class="snip1432">
+                                <img src="images/walles.png" height="350" alt="sample36" />
+                                <figcaption>
+                                    <div>
+                                        <h3>Arduino</h3>
+                                        <h3>센서활용프로그래밍(전공)</h3>
+                                    </div>
+                                    <div>
+                                        <h2>자동개폐 쓰레기통</h2>
+                                    </div>
+                                </figcaption>
+                                <a href="#" class="image fit" data-toggle="modal" data-target="#myModal3"></a>
+                            </figure>
+                            <!--
                             <a href="#" class="image fit" data-toggle="modal" data-target="#myModal3"><img id="myImg" height="350" src="images/walles.png" alt="" /></a>
                             <header>
                                 <h3>Arduino를 이용한 자동개폐 쓰레기통</h3>
                             </header>
+-->
 
                         </article>
 
@@ -495,10 +592,25 @@ height: 100%;
                     <div class="col-4 col-12-mobile">
 
                         <article class="item">
+                            <figure class="snip1432">
+                                <img src="images/iphone.png" height="315" alt="sample36" />
+                                <figcaption>
+                                    <div>
+                                        <h3>Swift</h3>
+                                        <h3>개인공부</h3>
+                                    </div>
+                                    <div>
+                                        <h2>Note</h2>
+                                    </div>
+                                </figcaption>
+                                <a href="#" class="image fit" data-toggle="modal" data-target="#myModal4"></a>
+                            </figure>
+                            <!--
                             <a href="#" class="image fit" data-toggle="modal" data-target="#myModal4"><img id="myImg" height="350" src="images/iphone.png" alt="" /> </a>
                             <header>
                                 <h3>Swift를 이용한 간단한 메모장</h3>
                             </header>
+-->
 
                         </article>
                         <div id="myModal4" class="modal fade" role="dialog">
@@ -551,13 +663,28 @@ height: 100%;
                         </div>
 
                         <article class="item">
+                            <figure class="snip1432">
+                                <img src="images/apple.png" height="350" alt="sample36" />
+                                <figcaption>
+                                    <div>
+                                        <h3>SWIFT</h3>
+                                        <h3>개인공부</h3>
+                                    </div>
+                                    <div>
+                                        <h2>Web View</h2>
+                                    </div>
+                                </figcaption>
+                                <a href="#" class="image fit" data-toggle="modal" data-target="#myModal8"></a>
+                            </figure>
+                            <!--
                             <a href="#" class="image fit" data-toggle="modal" data-target="#myModal4"><img id="myImg" src="images/apple.png" alt="" height="350" /></a>
                             <header>
                                 <h3>Swift를 이용한 간단한 웹뷰</h3>
                             </header>
+-->
 
                         </article>
-                        <div id="myModal4" class="modal fade" role="dialog">
+                        <div id="myModal8" class="modal fade" role="dialog">
                             <div class="modal-dialog modal-lg">
 
 
@@ -572,7 +699,7 @@ height: 100%;
                                     <div class="modal-body" style="color:black;">
                                         <div class="container-Main" align="left">
 
-                                            <h3><strong>Swift를 이용한 간단한 메모장</strong></h3><br>
+                                            <h3><strong>Swift를 이용한 간단한 웹뷰</strong></h3><br>
                                             <p>
                                                 <strong>개발인원/기간</strong>&nbsp;:&nbsp;1명/2일
                                             </p>
@@ -689,41 +816,114 @@ height: 100%;
             </div>
 
         </section>
+        <section id="insta" class="two">
+
+            <div align="center">
+                <h1>Instagram</h1>
+                <br>
+                <div id="instafeed"></div>
+            </div>
+        </section>
 
         <!-- Contact -->
-        <section id="contact" class="five">
+        <section id="contact" class="three">
             <div class="container">
 
                 <header>
-                    <h2>Contact</h2>
+                    <h2 class="alt"><strong>Contact</strong></h2>
                 </header>
 
 
-                <div class="row" align="left">
-                    <div class="col-6 col-12-mobile">
-                        <h2>연락처</h2>
 
-                        <i class="fas fa-home"></i>경기도 부천시 소사구 괴안동<br>
-                        <i class="fa fa-phone" aria-hidden="true"></i>010-9192-6062<br>
-                        <i class="fa fa-envelope"></i>taeyang7704@naver.com <br>
+                <div class="row">
 
-                        <br>
+                    <div class="col-4 col-12-mobile">
+
+
+
+
+
+
+                        <figure class="snip1283">
+                            <img src="images/univ.jpg" alt="sample70" />
+                            <figcaption>
+                                <h3>Univ</h3>
+                                <p>동양미래대학교<br>
+                                    컴퓨터정보공학과</p>
+                            </figcaption>
+                        </figure>
+
+
 
                     </div>
+
+                    <div class="col-4 col-12-mobile">
+
+
+
+                        <figure class="snip1200">
+                            <img src="images/taeyang.jpg" alt="sq-sample27" />
+                            <figcaption>
+                                <p>
+
+                                    <i class="fa fa-phone" aria-hidden="true">&nbsp;010-9192-6062</i><br>
+                                    <i class="fas fa-home">&nbsp;경기도 부천시 소사구 괴안동</i><br>
+                                    <i class="fa fa-envelope">&nbsp;taeyang7704@naver.com</i>
+
+                                </p>
+                                <div class="heading">
+                                    <h2>Personal<span> information</span></h2>
+                                </div>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+
+
+
+                        
+
+
+
+                    </div>
+
+                         <div class="col-4 col-12-mobile">
+
+
+
+                        <figure class="snip1200">
+                            <img src="images/mars.jpg" height="370" alt="sq-sample27" />
+                            <figcaption>
+                                <p>
+
+                                  컴퓨터정보공학과 전공동아리
+                                    MARS
+
+                                </p>
+                                <div class="heading">
+                                    <h2>Study<span> Club</span></h2>
+                                </div>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+
+
+
+                        
+
+
+
+                    </div>
+
+
                 </div>
-                <!-- <form method="post" action="#">
-                    <div class="row">
-                        <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-                        <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-                        <div class="col-12">
-                            <textarea name="message" placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <input type="submit" value="Send Message" />
-                        </div>
-                    </div>
-                </form> -->
+
             </div>
+            <br>
+            <br>
+
+
+
+
             <div id="map" class="to-animate" style="height:400px;width:100%;">
 
             </div>
